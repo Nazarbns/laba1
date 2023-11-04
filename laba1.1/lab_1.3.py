@@ -1,5 +1,6 @@
-x=5
-print(x)
-print("x= ", x)
-y=input("podaj liczbę: ")
-z=int(input("podaj liczbę: "))
+x=int(input("Длина: "))
+y=int(input("Ширина: "))
+S=x*y
+print("Площадь прямоугольника: ",S)
+P=(x+y)*2
+print("Периметр прямоугольника: ",P)
