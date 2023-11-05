@@ -1,6 +1,6 @@
-x=int(input("Длина: "))
-y=int(input("Ширина: "))
+x=int(input("Długość: "))
+y=int(input("Szerokość: "))
 S=x*y
-print("Площадь прямоугольника: ",S)
+print("Obszar prostokąta: ",S)
 P=(x+y)*2
-print("Периметр прямоугольника: ",P)
+print("Obwód prostokąta: ",P)
