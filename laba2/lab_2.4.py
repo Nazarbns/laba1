@@ -8,5 +8,11 @@ else:
     mniejsza = b
     wieksza = a
 
+print("Liczby parzyste: ")
+
 for liczba in range(mniejsza, wieksza + 1):
+
+    if liczba % 2 != 0:
+        continue
+
     print(liczba)
