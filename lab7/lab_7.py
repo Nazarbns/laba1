@@ -10,15 +10,19 @@ oceny_wieksze_niz_4 = df[df['ocena_z_kolokwium'] > 4]
 # b.
 posortowani_studenci = df.sort_values(by='ocena_z_kolokwium')
 
-srednia_ocen_w_grupach = df.groupby('ocena_z_kolokwium')['ocena_z_kolokwium'].mean()
+srednia_ocena_w_grupach = df.groupby('ocena_z_kolokwium')['ocena_z_kolokwium'].mean()
+
+merged_df = pd.merge(df, df1, on='nr_albumu', how='left')
 
 print(df)
 
 print("\nStudenci z oceną większą niż 4:")
 print(oceny_wieksze_niz_4)
-
 print("\nStudenci posortowani według ocen:")
 print(posortowani_studenci)
 
 print("\nŚrednia ocena w każdej grupie:")
 print(srednia_ocena_w_grupach)
+
+print("\nPołączona ramka danych:")
+print(merged_df)
